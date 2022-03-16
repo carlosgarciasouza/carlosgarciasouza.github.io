@@ -1,0 +1,601 @@
+/*--- GENERAL CONFIGS---*/
+*{
+    margin: 0;
+    font-family: 'Lato';
+}
+body{
+    background: linear-gradient(45deg, #193498, #113CFC, #1597E5, #69DADB);
+    background-size: 300% 300%;
+}
+
+
+
+/* ---PROFILE PIC CONFIG--- */
+img.profile-pic{
+    width: 15vw;
+    margin: -10% auto;
+    border-radius: 50%;
+}
+
+
+/*---PRINCIPAL CONTAINER---*/
+div.container{
+    box-shadow: 0 0 1em black;
+    background-color: rgba(124, 121, 121, 0.678);
+    border-radius: 10px;
+    width: 80%;
+    max-height: 500vh; /*---valor provisório, apenas para testes de scrollbar---*/
+    margin: 0 auto;/*centralizar div*/
+    margin-top: 20vh;
+    text-align: center;/*altera TODO os escopo do bloco*/
+}
+
+
+
+/*subclasses container*/
+.title-area{
+    margin-top: 12%;
+}
+
+/*title*/
+.title{
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 2.5em;
+    font-family: 'Lato';
+    letter-spacing: 5px;
+    display: inline-block;
+}
+.sub-title{
+    margin-top: 2vh;
+
+    color: white;
+    text-shadow: 2px 1px black;
+    font-family: 'Lato';
+    letter-spacing: 2px;
+}
+
+
+
+/*---social media---*/
+.social{
+    display: inline;
+    height: 20vh;
+    padding-top: 5%;
+}
+.social-logo{ /*---logo icons---*/
+    font-size: 2.5em;
+    color: white;
+}
+.social ul{
+    list-style: none;
+    margin-top: 3vh;
+}
+.social li{
+    display: inline-block;
+    margin-right: 4%;
+}
+.social a{
+    text-decoration: none;
+}
+
+
+.main{
+    /* Configurando Display flex para organizar o código no eixo(x,y) facilmente */
+    display: flex;
+
+    /* ---config Flex--- */
+    align-items: left;
+    justify-content: left;
+
+    margin-top: 3%;
+
+    /* border-bottom: 2px solid red; */
+}
+.PerfilPessoal{
+    padding: 2% 1% 2% 3%;
+}
+.PerfilPessoal, .conhecimento{
+
+    /* border: 2px solid green; */
+    max-width: 45%;
+    /* margin-right: 8% */
+}
+
+.main div:nth-child(2) /*Areas de conhecimento*/{    
+    border-left: 2px solid rgba(70, 70, 70, 0.425);
+    
+    padding: 2% 0 0 5%;
+}
+.level{
+    padding: 2%
+}
+
+/*---TITLES MAIN---*/
+.PerfilPessoal h2, .conhecimento h2, .formacao h2, .hab h2{
+    
+    text-align: left;
+    font-family: 'Lato';
+    letter-spacing: 3px;
+    margin: 5% 0;
+
+
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.PerfilPessoal p, .PerfilPessoal ul{
+    font-family: 'Lato';
+    color: rgb(240,255,255);
+    letter-spacing: 1.5px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px black;
+
+    text-align: left;
+}
+.PerfilPessoal ul{
+    padding-left: 0%;
+}
+.PerfilPessoal li{
+    display: inline-block;
+}
+.conhecimento ul{
+    font-family: 'Lato';
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+    .conhecimento ul li{
+    margin: 2vh 0 0 0;
+
+}
+.conhecimento ul div{
+    border: 2px solid #1d4261;
+    background-color: #1d4261;
+}
+
+
+ .conhecimento ul li:nth-child(1) {
+    margin-top: 0;
+}
+.projects{
+    text-align: left;
+    font-family: 'Lato';
+    letter-spacing: 3px;
+    margin: 3% 3%;
+
+
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.wrapper{
+    height: 40vh;
+    display: flex;
+    overflow-x: auto;
+
+    padding: 2% 0;
+}
+.wrapper .cards{
+    width: 30vw;
+    height: 40vh;
+    line-height: 40vh;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 20px ;
+    
+    margin-right: 2%;
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 0 0 1em black;
+
+    /* transform-origin: 0 0;
+    transition: transform .25s, visibility .25s ease-in; */
+
+}
+.wrapper .cards:hover{
+    /* transform: scale(2); */
+    color: white;
+}
+.wrapper .cards:nth-child(1){
+    margin-left: 1%;
+    background-image: url(../Images/sql-image.jpg);
+}
+.wrapper .cards:nth-child(2){
+    background-image: url(../Images/forms-image.png);
+
+}
+.wrapper .cards:nth-child(3){
+    background-image: url(../Images/to-do-list.png);
+
+}
+
+
+.formacao p, .hab p{
+    font-family: 'Lato';
+    color: rgb(240,255,255);
+    letter-spacing: 1.5px;
+    font-size: 1.25em;
+    text-shadow: 1px 1px black;
+
+    text-align: left;
+}
+.hab{
+    /* border: 2px solid rgba(70, 70, 70, 0.424);  */
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.formacao{
+    border-left: 2px solid rgba(70, 70, 70, 0.424);
+    padding: 2.5%
+}
+footer{
+    letter-spacing: 3px;
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    color: white;
+    
+    background: rgba(67, 72, 88, 0.411); 
+    
+    margin-bottom: 3vh;
+}
+footer div{
+    display: inline-block;
+}
+footer h2, footer h3{
+    text-align: left;
+    font-family: 'Lato';
+    letter-spacing: 3px;
+    
+    
+    color: white;
+    text-shadow: 2px 2px black;
+}
+footer h2{
+    margin: 2%;
+    padding-top: 3%;
+}
+footer h3{
+    margin: 0 0 1% 0;
+}
+footer ul{
+    text-align: left;
+    list-style: none;
+    padding-bottom: 1vh ;
+}
+footer li{
+    padding-bottom: .5vh ;
+}
+.icons-footer{
+    color: white;
+}
+.aling-footer{
+    margin-left: 1vw;
+}
+.aling-footer li{
+    display: inline-block;
+    margin: auto 2vh 1vh auto;
+    font-size: 3em;
+}
+.aling-footer li:nth-child(4), .aling-footer li:nth-child(5), .aling-footer li:nth-child(6){
+    margin-left: 1vw;
+}
+
+
+/* ----ANIMATIONS--- */
+
+/*title animation*/
+h1 .block {
+    background: blue;
+    width: 50px;
+    height: 5px;
+    animation: go-back 2.5s infinite alternate;
+}
+
+  @keyframes go-back {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(450px);
+    }
+}
+
+
+/* ---"Areas de Conhecimento"--- */
+/* keyframes definidos no JS para mouseenter*/
+/* HTML */
+#item-html{
+    width:85%;
+}
+@keyframes htmlLoading {
+    0%{width: 0%}
+    25%{width:21%}
+    50%{width: 43%}
+    75%{width: 64%}
+    90%{width: 90%}
+    100%{width: 85%}
+}
+@keyframes html-mouseenter{
+    0%{width: 0%}
+    50%{width: 50%}
+    80%{width: 90%}
+    100%{width: 85%}
+}
+
+/* CSS */
+#item-css{
+    width: 80%;
+}
+@keyframes cssLoading {
+    0%{width: 0%}
+    25%{width: 20%}
+    50%{width:40%}
+    75%{width:65%}
+    90%{width: 85%}
+    100%{width: 80%}
+}
+@keyframes css-mouseenter{
+    0%{width: 0%}
+    25%{width: 20%}
+    50%{width:40%}
+    75%{width:65%}
+    90%{width: 85%}
+    100%{width: 80%}
+    
+}
+
+/* JS */
+#item-js{
+    width: 30%;
+}
+@keyframes jsLoading{
+    0%{width: 0%}
+    25%{width: 7%}
+    50%{width: 15%}
+    75%{width: 22%}
+    90%{width: 32%}
+    100%{width: 30%}
+}
+@keyframes js-mouseenter {
+    0%{width: 0%}
+    25%{width: 7%}
+    50%{width: 15%}
+    75%{width: 22%}
+    90%{width: 32%}
+    100%{width: 30%}
+}
+
+/* SQL */
+#item-sql{
+    width: 50%;
+}
+@keyframes sqlLoading{
+    0%{width: 0%}
+    25%{width:12%}
+    50%{width:25%}
+    75%{width: 37%}
+    90%{width: 53%}
+    100%{width: 50%}
+}
+@keyframes sql-mouseenter {
+    0%{width: 0%}
+    25%{width:12%}
+    50%{width:25%}
+    75%{width: 37%}
+    90%{width: 53%}
+    100%{width: 50%}
+    
+}
+
+/* GIT */
+#item-git{
+    width:35%
+}
+@keyframes gitLoading {
+    0%{width: 0%}
+    25%{width: 6%}
+    50%{width: 17%}
+    75%{width: 23%}
+    90%{width: 40%}
+    100%{width: 35%}
+}
+@keyframes git-mouseenter {
+    0%{width: 0%}
+    25%{width: 6%}
+    50%{width: 17%}
+    75%{width: 23%}
+    90%{width: 40%}
+    100%{width: 35%}
+}
+
+/* EN */
+#item-en{
+    width:45%
+}
+@keyframes enLoading {
+    0%{width: 0%}
+    25%{width: 11%}
+    50%{width: 22%}
+    75%{width: 30%}
+    90%{width: 50%}
+    100%{width: 45%}
+}
+@keyframes en-mouseenter {
+    0%{width: 0%}
+    25%{width: 11%}
+    50%{width: 22%}
+    75%{width: 30%}
+    90%{width: 50%}
+    100%{width: 45%}
+}
+
+/* Lógica */
+
+#item-lp{
+    width: 80%;
+}
+@keyframes lpLoading {
+    0%{width: 0%}
+    25%{width: 20%}
+    50%{width:40%}
+    75%{width:65%}
+    90%{width: 85%}
+    100%{width: 80%}
+}
+@keyframes lp-mouseenter{
+    0%{width: 0%}
+    25%{width: 20%}
+    50%{width:40%}
+    75%{width:65%}
+    90%{width: 85%}
+    100%{width: 80%}
+    
+}
+
+
+
+/* Formação */
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+[data-anime="up"]{
+    transform: translate3d(0, 100%, 0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+
+/*--Animation Icons----*/
+i.social-logo:hover{
+    -webkit-animation:spin 2s linear infinite;/*webkit usado no safari e chrome*/
+    -moz-animation:spin 2s linear infinite;/*moz usado para o firefox*/
+    animation:spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+     100% { -webkit-transform: rotate(360deg); } 
+    }
+@keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+
+.social p{
+    color: black;
+}
+i{color: black;}
+
+
+
+
+/*---scrollbar---*/
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #4682B4; /*deixar da mesma cor do Body bg-color*/
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #4682B4; /*deixar da mesma cor do Body bg-color*/
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgba(255, 255, 255, 0.425); /*cor da barra de fato*/
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width:670px){
+    /* ---PROFILE PIC CONFIG--- */
+    img.profile-pic{
+        width: 25vw;
+        margin: -10% auto;
+        border-radius: 50%;
+    }
+
+
+/*---PRINCIPAL CONTAINER---*/
+    div.container{
+            border-radius: 10px;
+            width: 100vw;
+            margin: 0; /*centralizar div*/
+            margin-top: 20vh;
+            text-align: center;/*altera TODO os escopo do bloco*/
+        }
+    
+        .main{ /*--- ALTERA DOIS BLOCOS DIFERENTES---*/
+
+            display: block;
+            text-align: center;
+        
+            border: 2px solid red;
+        }
+    div.PerfilPessoal, .conhecimento{
+        text-align: center;
+        font-size: 1.2em;
+        max-width: 100%;
+    }        
+    .PerfilPessoal h2, .conhecimento h2, .formacao h2, .hab h2{
+        text-align: center;
+
+    }
+    .main div:nth-child(2) /*Areas de conhecimento*/{    
+        border: none;
+    }
+    .projects{
+        text-align: center;
+        border: 2px solid blue;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .wrapper{
+        height: 100vh;
+        display: flex;
+
+        flex-wrap: wrap;
+        overflow-x: auto;
+    
+        padding: 2% 0;
+    }
+    .wrapper .cards{
+        width: 40vw;
+        height: 40vh;
+        line-height: 40vh;
+        
+        margin: 0 auto;
+    
+    }
+    .wrapper .cards:nth-child(1){
+        margin-left: auto;
+    }
+
+
+
+}
