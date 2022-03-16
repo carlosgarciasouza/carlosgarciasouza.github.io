@@ -1,4 +1,4 @@
-## Olá,Seja Bem Vindo!
+## Olá, Seja Bem Vindo!
 
 - 🔭 Atualmente trabalhando em projetos pessoais
 - 🌱 Estudando Javascript (JS)
