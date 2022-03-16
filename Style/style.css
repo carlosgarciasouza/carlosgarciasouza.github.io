@@ -542,8 +542,6 @@ i{color: black;}
 
             display: block;
             text-align: center;
-        
-            border: 2px solid red;
         }
     div.PerfilPessoal, .conhecimento{
         text-align: center;
@@ -559,7 +557,6 @@ i{color: black;}
     }
     .projects{
         text-align: center;
-        border: 2px solid blue;
     }
 
 
